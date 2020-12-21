@@ -1,4 +1,25 @@
 {
+  "name": "snowpack-app-react-ts",
+  "version": "1.0.0",
+  "description": "Snowpack ReactTS Material-UI app",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lcarv20/snowpack-reactTs.git"
+  },
+  "keywords": [
+    "Saas",
+    "Snowpack",
+    "Typescript",
+    "Material-UI",
+    "SVGR"
+  ],
+  "author": "lCarv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lcarv20/snowpack-reactTs.git"
+  },
+  "homepage": "https://github.com/Lcarv20/snowpack-reactTs.git#readme",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
