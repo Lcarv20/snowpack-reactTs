@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LogoIcon from './logoIcon.svg';
+import './App.scss';
+import { funq } from './funq';
+import { Button, Checkbox } from '@material-ui/core';
 
-interface AppProps {}
-
-function App({}: AppProps) {
+function App() {
   // Create the count state.
+
   const [count, setCount] = useState(0);
   // Create the counter (+1 every second).
   useEffect(() => {
@@ -16,9 +17,14 @@ function App({}: AppProps) {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <LogoIcon className="App-logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit
+          <Button variant="outlined" color="secondary">
+            src/App.tsx
+          </Button>
+          <Checkbox />
+          and save to reload.
         </p>
         <p>
           Page has been open for <code>{count}</code> seconds.
@@ -33,6 +39,11 @@ function App({}: AppProps) {
             Learn React
           </a>
         </p>
+        <div className="bubb">
+          <p>
+            This is a custom <code>diveiro</code>
+          </p>
+        </div>
       </header>
     </div>
   );

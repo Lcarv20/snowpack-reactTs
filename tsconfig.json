@@ -1,5 +1,5 @@
 {
-  "include": ["src", "types"],
+  "include": ["src", "types", "util/__tests__/App.test.tsx"],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
@@ -16,6 +16,8 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error"
+    "importsNotUsedAsValues": "error",
+    "allowJs": true,
+    "esModuleInterop": true
   }
 }
